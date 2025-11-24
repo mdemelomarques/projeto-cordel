@@ -1,0 +1,115 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+:root {
+    --fontetitulo:"Passion One", sans-serif;
+    --fonteversos:"Sriracha", cursive;
+    --fontepadrao:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--fontepadrao);
+}
+
+header{
+    background-color: #000000;
+    text-align: center;
+    color: white;
+}
+header > h1{
+    font-family: var(--fontetitulo);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a ,footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonteversos);
+    font-size: 3.3vw;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.padrao{
+    background-color: white;
+    color: #000;
+}
+
+
+section.versoimagem{
+    
+    background-color: black;
+    box-shadow: inset -4px -4px 18px 3px rgba(0,0,0,0.79);
+    color: white;
+}
+
+section.versoimagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+ 
+section#verso2{
+    background-image: url(../imagens/background001.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#verso5{
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+footer > p {
+    text-align: center;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+footer > p > a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
